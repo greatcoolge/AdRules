@@ -5,8 +5,8 @@
 ! Expires: 24 Hours
 ! Description: 该规则适用于移动端浏览器，如via, Vivaldi, X Browser
 ! Description: 该规则合并自EasyList Lite, Easylist China, CJX's Annoyance List, 乘风视频过滤规则, Adblock Warning Removal List, 酷安大萌主的规则, 去APP下载广告规则, 百度超级净化和一些额外规则
-! Version: 2023-04-19 08:56:13（北京时间）
-! Total count: 33614
+! Version: 2023-04-20 08:54:22（北京时间）
+! Total count: 33635
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###J_sideFooter.side_footer
@@ -579,6 +579,7 @@
 ##.common_ad
 ##.con_section > .da
 ##.conch-ads-box
+##.container + .container > .warp > .cate
 ##.container > .index-ad
 ##.container > .slide-baidu
 ##.container > a.mid-wrapper
@@ -911,6 +912,7 @@
 ##body#nr_body div.fixed ~ *
 ##body.active > div.myui-panel > DIV#home_slide
 ##body.chapter > div.container div.slide-baidu *
+##body.conch-hasone section > span > video
 ##body.no_overflow strong
 ##body.page > .popup
 ##body.page.player > DIV.shortcuts-mobile-overlay
@@ -1095,7 +1097,7 @@ $removeparam=/^target=admitad$/
 $removeparam=/^tc_/,domain=bodenusa.com
 $removeparam=/^tracker=affiliatefuture$/i
 $removeparam=/^utm-/
-$removeparam=/^utm_/i,domain=~redir.tradedoubler.com|~sendgb.com|~allegro.pl|~tix.axs.com|~transfernow.com|~carrefourpl.snrpage.com|~justdial.com
+$removeparam=/^utm_/i,domain=~tradedoubler.com|~sendgb.com|~allegro.pl|~tix.axs.com|~transfernow.com|~carrefourpl.snrpage.com|~justdial.com|~pepper.pl
 $removeparam=/^via=rss$/
 $removeparam=/^web_id\d+/,domain=tiktok.com
 $removeparam=/^wickedid=/i
@@ -4098,7 +4100,6 @@ $~xmlhttprequest,removeparam=ref_,domain=facebook.*|facebookwkhpilnemxj7asaniu7v
 /static/adsview/*
 /static/common/js/djlib_
 /static/images/ky888.gif
-/static/js/a22082021.
 /static/js/aall.js
 /static/js/fuo_3.js
 /static/js/gold_daddy.js
@@ -4183,15 +4184,18 @@ $~xmlhttprequest,removeparam=ref_,domain=facebook.*|facebookwkhpilnemxj7asaniu7v
 /v.gif?logtype=
 /v0/amp-addthis-*.js
 /v2/ads/*
-/v2/stats/99*
+/v2/stats/1*/1*$third-party
+/v2/stats/9*$third-party
 /vbvb_*_pmpm.js
+/vh2/$third-party
 /videoJS/video-conrtib-ads.js
 /videoad.
 /videojs5/*vpaid.min.js$domain=91porn.com|email.91dizhi.at.gmail.com.8h9.space
 /view/image/ngps1.gif
 /viewad.
 /vipgg/*
-/vj1/
+/vj1/$third-party
+/vj2/$third-party
 /vmind.qqvideo.tc.qq.com^
 /vtdd/*$script
 /vtdt/*$script
@@ -5458,7 +5462,7 @@ $~xmlhttprequest,removeparam=ref_,domain=facebook.*|facebookwkhpilnemxj7asaniu7v
 @@/pub/ad/*$domain=ruten.com.tw
 @@/pub1/??$domain=banggo.com
 @@/sensorsdata-$domain=zkh.com
-@@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|chuanglan.com|fenbi.com|imooc.com|kuque.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com|zzjiasuqi.com
+@@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|chuanglan.com|fenbi.com|imooc.com|kuque.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com|xinrenxinshi.com|zzjiasuqi.com
 @@/setCookie?$domain=ctrip.com|ctrip.com.hk|pinyin.cn
 @@/share/js/*$domain=yunpanjingling.com
 @@/show_ad_$domain=wb.qq.com
@@ -5940,7 +5944,7 @@ $~xmlhttprequest,removeparam=ref_,domain=facebook.*|facebookwkhpilnemxj7asaniu7v
 @@||bbs.tgfcer.com^$generichide
 @@||bcebos.com/static/translation/widget/translate/output/AdBanner/AdBanner.js
 @@||bcebos.com^$script,domain=31xiaoshuo.com|biququ.info|jingwubook.com
-@@||bchangtai.vip/static/ad/main.js
+@@||bcong.top/static/ad/main.js
 @@||bdfrm.bidvertiser.com/BidVertiser.dbm$subdocument,domain=exrapidleech.info
 @@||bdimg.com/advert/js/advert.js$domain=music.baidu.com
 @@||bdimg.com/libs/$domain=00ksw.com|147xiaoshuo.com|1biqug.com|23xstxt.net|24kwx.net|52biquge.com|8181zw.com|abcxs.net|b520.cc|b5200.net|biqiuge8.cc|biqiugexsw.com|biquge99.cc|biqugecd.com|biqugeq.com|biqugesk.org|biqugewu.net|biqulu.net|bixia.org|boquku.com|bqg999.net|bqkan8.com|bqwxg8.com|bxwx.live|cascoo.net|cits0871.com|ddbqgtxt.cc|exiaoshuo.com|gdbzkz.org|ggkxs.com|huanyue123.com|huixsw.com|ibiquw.com|ishuquge.com|janpn.com|jx.la|lindiankanshu.cc|lingdianxs.net|paoshu8.com|piaotian5.net|qbiqu.com|qianrenge.cc|quge66.com|shuyy8.com|sytxt.cc|taiuu.com|ttzw.tv|txtwan.com|u33.me|viviyzw.com|x23us.me|xbiqugecc.com|xiaoshuwu5.com|xinxs.la|xqianqian.com|xxbiqudu.com|xxqb5200.com|xygwh.cc|ygshu.com|ymxwx.com|yuyougu.com|zbzw.la
@@ -12670,6 +12674,7 @@ maxthon.cn###festival-fix-bottom
 maxthon.cn###festival-rain-wrapper
 maxthon.cn###festival-skin-link
 maxthon.cn###header-float-promote
+maxthon.cn###mx3-popularization-float
 maxthon.cn###shopping
 maxthon.cn###side-game-pop
 maxthon.cn###top-slider-ad
@@ -15978,6 +15983,7 @@ zzzyk.com###Tinfo
 ||18comic.*/static/resources/images/300
 ||18comic.*/static/resources/images/JGG/
 ||18dui.com^
+||18so.vip^
 ||1905715.com^
 ||1909.me/upload/ad/
 ||19216811.la/net/advert
@@ -16782,6 +16788,7 @@ zzzyk.com###Tinfo
 ||6vw.cc/d/$script
 ||70.86.24.120:8060/
 ||7011.stia.cn^
+||7067.top^
 ||7080ys.top^
 ||70822.com/agfile/
 ||70e.com^$third-party
@@ -17707,6 +17714,7 @@ zzzyk.com###Tinfo
 ||agtsjb.com^
 ||aguo.com^$third-party
 ||aguterl.cn^
+||agwdac.xyz^
 ||ah.sina.com.cn/iframe/
 ||ahclyq.xyz^
 ||ahdyvor.cn^
@@ -18207,6 +18215,7 @@ zzzyk.com###Tinfo
 ||anime4fun.com/js/newanime.js$script
 ||anioz3b.cc^
 ||aniqfwz.cc^
+||aniqgsz.cc^
 ||anixwallpaper.com^$csp=script-src 'self' * 'unsafe-inline'
 ||anjuke.com^*/ajax/business_area_search/
 ||ankangwang.com/js/info.js
@@ -19912,6 +19921,7 @@ zzzyk.com###Tinfo
 ||cellularcountry.com^$removeparam=zenid
 ||ceneo.pl^$removeparam=tag
 ||cengbalx.fun^
+||cennv.cn^
 ||centurys.net/promo_
 ||ceoqq.xyz^
 ||ceqerq.xyz^
@@ -21814,6 +21824,7 @@ zzzyk.com###Tinfo
 ||everesttech.net^$removeparam=/^ev_/
 ||everydaycarry.com^$popup
 ||everyonepiano.cn/Public/*0x
+||evmnlpv.cn^
 ||evtubescms.phncdn.com^
 ||evunmc.xyz^
 ||ew740.cn^
@@ -22219,6 +22230,7 @@ zzzyk.com###Tinfo
 ||fsdnp.cyou^
 ||fsgsfaf6.com^
 ||fspjjp.xyz^
+||fssxyiq.cn^
 ||fstats.xyz^
 ||ft.com/a.html
 ||ft8e.top^
@@ -22572,6 +22584,7 @@ zzzyk.com###Tinfo
 ||gia.jd.com^
 ||giaoji.com/Runtime/Js/
 ||gimy.*/images/eee*.png
+||giold.xyz^
 ||giotlsi.cn^
 ||giphy.com^$removeparam=ref
 ||girklr.cn^
@@ -24718,6 +24731,7 @@ zzzyk.com###Tinfo
 ||johtzj.com^
 ||joiakit.com^
 ||jointreport-switch.com^$third-party
+||joiwnq2.cn^
 ||jojog.com^
 ||jokerlu.com/upload/addon/
 ||jokerlu.com/upload/vod/
@@ -25391,6 +25405,7 @@ zzzyk.com###Tinfo
 ||kyxw9itc.xyz^
 ||kyxw9itv.club^
 ||kyzx.xyZ^
+||kzchyhr.cn^
 ||kzeaa.com^
 ||kzecc.com^
 ||kzehh.com^
@@ -25927,6 +25942,7 @@ zzzyk.com###Tinfo
 ||lubao-food.mobi^
 ||lucasyyy.ltd^
 ||luciochen.cn^
+||luckydino.ren^
 ||luckyorange.com^
 ||luckyorange.com^$third-party
 ||lunhua5.com/images/more.gif
@@ -26371,6 +26387,7 @@ zzzyk.com###Tinfo
 ||mfav88.com/yinzi/
 ||mfe.paqpq.com^
 ||mffdn.xyz^
+||mfifsux.xyz^
 ||mfjiaoyu.cn^
 ||mfwlis.xyz^
 ||mfxyqh.cn^
@@ -27756,6 +27773,7 @@ zzzyk.com###Tinfo
 ||pianjicdn.com^*.php
 ||pianyuan.la/slade.js
 ||pianyuan.org/zfb.
+||piaochong.co^
 ||piaodown.com/xtm/
 ||piaohua.com/js/yzz/$script
 ||piaoliang.com/js/all.js
@@ -27822,6 +27840,7 @@ zzzyk.com###Tinfo
 ||pipix.cc/gg.gif
 ||piroji.com^$domain=pronpic.org
 ||pites.cc/js/top.php
+||pithjpf.cn^
 ||pitudashen.top^
 ||pivlzt.xyz^
 ||pix.us.criteo.net^
@@ -28161,6 +28180,7 @@ zzzyk.com###Tinfo
 ||qexitv.com^
 ||qf1d.top^
 ||qfcdgy.cn^
+||qfdtqq.com^
 ||qfgall.cn^
 ||qfgfpi.cn^
 ||qfnoyix.cn^
@@ -30676,6 +30696,7 @@ zzzyk.com###Tinfo
 ||tuotianxia.top^
 ||tupian55.com^*.gif
 ||tupo.link^
+||turifb.xyz^
 ||tusmangas.net/ama/oso.js$script
 ||tutufu.com/bd/b-c1.js
 ||tututu666.com^
