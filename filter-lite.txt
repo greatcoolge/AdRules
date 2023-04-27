@@ -5,8 +5,8 @@
 ! Expires: 24 Hours
 ! Description: 该规则适用于移动端浏览器，如via, Vivaldi, X Browser
 ! Description: 该规则合并自EasyList Lite, Easylist China, CJX's Annoyance List, 乘风视频过滤规则, Adblock Warning Removal List, 酷安大萌主的规则, 去APP下载广告规则, 百度超级净化和一些额外规则
-! Version: 2023-04-26 08:55:07（北京时间）
-! Total count: 33736
+! Version: 2023-04-27 08:57:16（北京时间）
+! Total count: 33755
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###J_sideFooter.side_footer
@@ -258,7 +258,6 @@
 ###player-bottom-ads
 ###playerAd
 ###playerAdvLayer
-###playerContainer > .nav-ads
 ###playerJsvLayer.jsv-layer
 ###player_ad
 ###pop_hongbao
@@ -890,6 +889,7 @@
 ##DIV#video-player-ads-wrap
 ##DIV.JS_mid_ad
 ##DIV.ad-area.ad-area-fix-bottom
+##DIV.ad_js
 ##DIV.advertisingConfiguration
 ##DIV.appdownload_ad
 ##DIV.box-width.ec-ad
@@ -967,6 +967,7 @@ $document,removeparam=o,domain=ask.com|askmoney.com|bloglines.com|consumersearch
 $document,removeparam=source,denyallow=googlevideo.com,domain=1sol.io|ashford.com|asos.com|att.com|awd-it.*|bankofamerica.com|barenecessities.com|bedbathandbeyond.com|betterprogramming.pub|blavity.com|blog.getadblock.com|blogs.oracle.com|boscovs.com|boxboat.com|britishcornershop.co.uk|brownells.*|burkesoutlet.com|bybit.com|choicehotels.com|chollometro.com|coinpanel.com|contabo.com|cyberghostvpn.com|despegar.*|directv.com|discord.*|docs.google.com|docsend.com|drinkhint.com|educba.com|edx.org|eonline.com|escentual.com|eventbrite.*|fiverr.com|fool.com|forms.gle|gethotspotshield.com|gleam.io|goodcrypto.app|googleusercontent.com|greenhouse.io|greenvoice.fr|hammacher.com|hanes.com|hobbyhall.fi|hotspotshield.com|hottopic.com|housing.com|hp.com|instagram.com|itnext.io|jacquielawson.com|just-eat.co.uk|kasta.io|ladbible.com|learn.microsoft.com|medium.com|microsoftedgewelcome.microsoft.com|monster.fi|nautica.com|nortonsafe.search.ask.com|onehanesplace.com|outnorth.fi|paypal.com|petsupplies.com|phonesoap.com|quizlet.com|riteaid.com|runnode.com|search.brave.com|seekingalpha.com|sonos.com|spiceworks.com|squarespace.com|studio.co.uk|subscribe.gq.com|t.me|thedailybeast.com|tiktok.com|tokopedia.com|tommybahama.com|torrid.com|tous.com|tradingview.com|tumblr.com|twitter.com|user.qzone.qq.com|vimeo.com|webhint.io|wilsonsleather.com|wired.com|ylighting.com|youtube.com|yubo.live
 $document,removeparam=trackID
 $document,removeparam=trackid,domain=~nzpost.co.nz
+$document,removeparam=waporef
 $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.info|static.javhd.com|syndication.exosrv.com
 $domain=googleads.g.doubleclick.net
 $image,third-party,domain=258zw.com
@@ -3161,6 +3162,8 @@ $~xmlhttprequest,removeparam=ref_,domain=facebook.*|facebookwkhpilnemxj7asaniu7v
 .qidian.com/floatOpBox.
 .qidian.com/gameBox.
 .qidian.com/pageOps.
+.shop:*/ack?s=
+.shop:*/bid?url=
 .site:20443/*.js^$script,third-party
 .swf?clicktag=
 .test15./
@@ -8729,7 +8732,7 @@ angelweb.cn##.GG960x90
 angelweb.cn##.gg250x250
 anhuinews.com###ewm
 anibatch.net##.su-box.su-box-style-default
-anidub.vip,anidubonline.com#$#prevent-listener click window.open; abort-on-property-read brblob; override-property-read ad.done true
+anidub.vip,anidubonline.com#$#prevent-listener click window.open; abort-on-property-read brblob; override-property-read ad.active.timeout 0
 anifap.com,anitokyo.tv,hcdn.online,kinofilm.co,anipoisk.org#$#abort-on-property-read ClickUndercookie
 anime-shinden.info#@##ads_video
 anime4fun.com###hover
@@ -13066,6 +13069,7 @@ niutuku.com###downAD1
 niutuku.com##.listAD
 niutuku.com##.sideAD
 niutuku.com,sina.cn##.bannerAD
+nivod4.tv,nivod5.tv##.nav-ads
 nlc.gov.cn###lovexin12xx
 nmgnews.com.cn###div_ad4
 nobugin.com##.td-a-rec
@@ -14546,6 +14550,7 @@ tropica.cn##.bm.a_c1
 tropica.cn##.wp1.a_t
 trovesaurus.com###blocked
 truyen2u.net#$#abort-current-inline-script eval
+truyengihotne.com#$#abort-current-inline-script document.createElement checkIntersection
 truyentuan.com#$#abort-current-inline-script $ btpop
 tsdm.live###ts_sidebar_base
 tsviewer.com#@#.adsbygoogle
@@ -15732,6 +15737,7 @@ zzzyk.com###Tinfo
 ||1000dy.com^
 ||1002.men^
 ||100669.com^$third-party
+||10090dfs.com^
 ||100bt.com/dc?Url
 ||100fenlm.com^
 ||100ksw.com/inc/doc-
@@ -18488,6 +18494,7 @@ zzzyk.com###Tinfo
 ||asimov-win.settings.data.microsoft.com.akadns.net^
 ||asjsbew.cn^
 ||askfsh.cn^
+||asklcnlkacnklnl.com^
 ||asldmlws.cn^
 ||asleyty.com^
 ||asoeasy.cn^
@@ -19260,7 +19267,6 @@ zzzyk.com###Tinfo
 ||bigfishgames.com^$removeparam=npc
 ||bigfishgames.com^$removeparam=npi
 ||bigfishgames.com^$removeparam=pc
-||biggggg.com/videos/*/media_000$rewrite=abp-resource:blank-mp3,domain=nivod4.tv
 ||bihaipack.com^
 ||bikannovel.com^
 ||biketo.com/d/file/p/
@@ -19426,6 +19432,7 @@ zzzyk.com###Tinfo
 ||blogamethu.com^
 ||blogs.oracle.com^$removeparam=pcode
 ||blogspot.com^*/s1600/drug.gif
+||bloomberg.com^$removeparam=re_source
 ||blsenpg.cn^
 ||blsynmlv.fun^
 ||blue-tomato.com^$removeparam=/_(\$)ja/
@@ -20173,6 +20180,7 @@ zzzyk.com###Tinfo
 ||cj-sys.club^
 ||cj7g.top^
 ||cja-1223.cc^
+||cjbpqq.com^
 ||cjcvd6.com^
 ||cjdby.net/Public/home/images/advImg/
 ||cjgcedu.com^
@@ -21440,6 +21448,7 @@ zzzyk.com###Tinfo
 ||dyguo.com/pc/*0.js
 ||dyguo.com/pc/nr336.js
 ||dyhjw.com/Public/v3/appdown/images/AppEntrance.png
+||dyhnbgtsl.xyz^
 ||dyjcydn.cloud^
 ||dyjqd.com/images/js/dyjqd.js
 ||dykeep.com^
@@ -21664,6 +21673,7 @@ zzzyk.com###Tinfo
 ||eijriol.cn^
 ||eileenjaney.com^
 ||eisafniw.space^
+||eitb7.top^
 ||eiv.baidu.com/
 ||eiv.baidu.com^
 ||eiykmtb.cn^
@@ -24963,6 +24973,7 @@ zzzyk.com###Tinfo
 ||juyqiolna.cyou^
 ||juzwrl.xyz^
 ||jvkckeg.cn^
+||jvmxrug.xyz^
 ||jvpook.cn^
 ||jvpyxve.cn^
 ||jvyigg.biqugeq.com^
@@ -26927,6 +26938,7 @@ zzzyk.com###Tinfo
 ||n7181.com^
 ||naajie.com/float.js
 ||naemailom.fun^
+||nagmopd.cn^
 ||nahsfl.xyz^
 ||nai7.xyz^
 ||naiki.top^
@@ -26961,6 +26973,7 @@ zzzyk.com###Tinfo
 ||ndfsl.com^
 ||neaqi.top^
 ||necmdow.cn^
+||nedes.xyz^
 ||neets.cc/assets/js/dup.js
 ||neeva.com^$removeparam=nva
 ||nefroto.net^$script,domain=dada44230.fr
@@ -27556,6 +27569,7 @@ zzzyk.com###Tinfo
 ||otownx.xyz^
 ||otreh.xyz^
 ||otwiss.xyz^
+||oubqzcg.cn^
 ||ougannike.com^
 ||oujirkb.cn^
 ||oulibf.xin^
@@ -31700,6 +31714,7 @@ zzzyk.com###Tinfo
 ||wenrunyu.com^
 ||wenshenbang.com^$third-party
 ||wensixuetang.com^
+||wenxiaowu.xyz^
 ||wenxue.weimeifan.net^
 ||wenzhougy.cn^
 ||wephone.club^
@@ -32154,6 +32169,7 @@ zzzyk.com###Tinfo
 ||wx.sina.com.cn/iframe/pdps/
 ||wx.uc.downcdn.top^
 ||wxa.wxs.qq.com^
+||wxddid.cn^
 ||wxdqgmr.cn^
 ||wxebgpj.cn^
 ||wxlide.ink^
@@ -32659,6 +32675,7 @@ zzzyk.com###Tinfo
 ||xyimg.net^$domain=~xy.com
 ||xyj321.com/static/xyj/js/foot_slide_bar_
 ||xyj321.com/static/zx/js/zx-con-jsq_
+||xyjcpcb.cn^
 ||xylkpj.xyz^
 ||xywy.com/gk?a=
 ||xywy.com/zhixing/
@@ -32713,6 +32730,7 @@ zzzyk.com###Tinfo
 ||yangsir.xyz^
 ||yangxu.store^
 ||yangyiluo.xin^
+||yangyuqing.xyz^
 ||yanjiusuo.cc^
 ||yankuoyyds.com^
 ||yanping521.vip^
@@ -33545,6 +33563,7 @@ zzzyk.com###Tinfo
 ||zmadsvd.cn^
 ||zmakj.xyz^
 ||zmdtcw.cn^
+||zmfdjb.xyz^
 ||zmhqhuq.cn^
 ||zmk.pw/zfb.png
 ||zmlled.cn^
