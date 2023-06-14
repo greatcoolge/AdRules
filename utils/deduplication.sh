@@ -8,50 +8,31 @@ echo '新建TMP文件夹完成'
 
 # Start Download Filter File
 echo '开始下载规则...'
+
 # uBlock Origin规则
 ublock=(
-  # uBlock filters
+  # uBlock filters – Ads
   "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"
+  "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt"
+  "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt"
+  "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2022.txt"
+  "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2023.txt"
   # uBlock filters – Badware risks
   "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"
   # uBlock filters – Privacy
   "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
+  "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt"
   # uBlock filters – Quick fixes
   "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt"
-  # uBlock filters – Resource abuse
-  "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt"
   # uBlock filters – Unbreak
   "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
   # uBlock filters – Annoyances
   "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt"
-)
-
-# Adguard For Android 规则
-adguard=(
-  # 基础过滤器
-  "https://filters.adtidy.org/android/filters/2_optimized.txt"
-  # 移动设备过滤器
-  # "https://filters.adtidy.org/android/filters/11_optimized.txt"
-  # 防跟踪保护过滤器
-  # "https://filters.adtidy.org/android/filters/3_optimized.txt"
-  # URL跟踪过滤器
-  # "https://filters.adtidy.org/android/filters/17_optimized.txt"
-  # 社交媒体过滤器
-  # "https://filters.adtidy.org/android/filters/4_optimized.txt"
-  # 恼人广告过滤器
-  # "https://filters.adtidy.org/android/filters/14_optimized.txt"
-  # 中文过滤器
-  "https://filters.adtidy.org/android/filters/224_optimized.txt"
-  # DNS过滤器
-  # "https://filters.adtidy.org/android/filters/15_optimized.txt"
-)
-
-# Adguard For uBlock Origin 规则
-ag_ubo=(
+  "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances-others.txt"
+  "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances-cookies.txt"
+  # Adguard For uBlock Origin 规则
   # 基础过滤器
   "https://filters.adtidy.org/extension/ublock/filters/2.txt"
-  # 移动设备过滤器
-  # "https://filters.adtidy.org/extension/ublock/filters/11.txt"
   # 防跟踪保护过滤器
   "https://filters.adtidy.org/extension/ublock/filters/3.txt"
   # URL跟踪过滤器
@@ -62,6 +43,14 @@ ag_ubo=(
   "https://filters.adtidy.org/extension/ublock/filters/14.txt"
   # 中文过滤器
   "https://filters.adtidy.org/extension/ublock/filters/224.txt"
+)
+
+# Adguard For Android 规则
+adguard=(
+  # 基础过滤器
+  "https://filters.adtidy.org/android/filters/2_optimized.txt"
+  # 中文过滤器
+  "https://filters.adtidy.org/android/filters/224_optimized.txt"
 )
 
 # 元素过滤规则
@@ -99,26 +88,12 @@ adblock_ag=(
 
 # 元素过滤规则 (PC)
 adblock_full=(
-  # EasyList (反广告主规则列表。主要面向英文网站，包含大量通用规则)
-  # "https://easylist.to/easylist/easylist.txt"
-  # Easylist China (反广告主规则列表的补充。主要面向中文网站)
-  # "https://easylist-downloads.adblockplus.org/easylistchina.txt"
-  # EasyPrivacy (防隐私跟踪挖矿规则列表)
-  # "https://easylist.to/easylist/easyprivacy.txt"
-  # CJX's Annoyance List (反自我推广,移除anti adblock,防跟踪规则列表)
-  # "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   # halflife规则，[推荐桌面端]合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance，以及补充的一些规则
   "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt"
-  # Adblock Warning Removal List
-  # "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
-  # Anti-Adblock Killer
-  # "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
   # halflife规则，合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters
   "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-edentw.txt"
   # I don't care about cookies
   "https://www.i-dont-care-about-cookies.eu/abp/"
-  # Online Malicious URL Blocklist URL-based
-  # "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter.txt"
 )
 
 # 元素过滤规则 (Mobile)
@@ -139,18 +114,10 @@ adblock_lite=(
 hosts=(
   # 大圣净化规则
   "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts"
-  # neoHosts - Basic Hosts 基础、克制的数据，推荐所有用户使用。
-  # "https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/basic/hosts.txt"
   # NoCoin adblock list
   "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
   # yhosts 智能设备专用(更全,用电脑看视频网站可能出错)
   "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts"
-  # StevenBlack's hosts file
-  "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
-  # NEO DEV HOST - Lite version (Without Dead Domain inside)
-  # "https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_host"
-  # GoodbyeAds
-  # "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt"
   #hostsVN
   "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
 )
@@ -184,8 +151,6 @@ dns_agh=(
 allow=(
   # AdGuard Chinese Filters whitelist
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/allowlist.txt"
-  # Energized Protection - unblock
-  # "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/filter"
   # Cats-Team 自定义白名单规则
   "https://raw.githubusercontent.com/Cats-Team/AdRules/main/mod/rules/allowlist.txt"
   # GOODBYEADS Rules
