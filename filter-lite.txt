@@ -5,8 +5,8 @@
 ! Expires: 24 Hours
 ! Description: 该规则适用于移动端浏览器，如via, Vivaldi, X Browser
 ! Description: 该规则合并自EasyList Lite, Easylist China, CJX's Annoyance List, 乘风视频过滤规则, Adblock Warning Removal List, 酷安大萌主的规则, 去APP下载广告规则, 百度超级净化和一些额外规则
-! Version: 2023-12-26 08:49:22（北京时间）
-! Total count: 32777
+! Version: 2023-12-27 08:49:31（北京时间）
+! Total count: 32811
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###J_sideFooter.side_footer
@@ -949,6 +949,7 @@
 ##DIV.loc_banner.only-app
 ##DIV.module-adslist
 ##DIV.row.no-gutters.m-0
+##DIV.swiper2.swiper-initialized.swiper-horizontal
 ##I.fa.fa-close
 ##IMG#diads
 ##INS.adsbygoogle
@@ -1020,6 +1021,7 @@
 ##style + .topd + .bottomd
 ##style + .vdgdo
 ##ul.content-list > li.content-tb
+##ul.thread_detail_ads
 ##vg-pause-ads
 #@##banner_ad
 #@##sponsored-ad
@@ -1085,6 +1087,21 @@ $doc,removeparam=LID
 $doc,removeparam=_clde
 $doc,removeparam=_cldee
 $doc,removeparam=_ft_
+$doc,removeparam=_p_rfs,domain=temu.com
+$doc,removeparam=_x_ads_account,domain=temu.com
+$doc,removeparam=_x_ads_channel,domain=temu.com
+$doc,removeparam=_x_ads_creative_id,domain=temu.com
+$doc,removeparam=_x_ads_id,domain=temu.com
+$doc,removeparam=_x_ads_set,domain=temu.com
+$doc,removeparam=_x_ads_sub_channel,domain=temu.com
+$doc,removeparam=_x_gmc_account,domain=temu.com
+$doc,removeparam=_x_gmc_catalog,domain=temu.com
+$doc,removeparam=_x_ns_device,domain=temu.com
+$doc,removeparam=_x_ns_match_type,domain=temu.com
+$doc,removeparam=_x_ns_msclkid,domain=temu.com
+$doc,removeparam=_x_ns_sku_id,domain=temu.com 
+$doc,removeparam=_x_ns_source,domain=temu.com
+$doc,removeparam=_x_vst_scene,domain=temu.com
 $doc,removeparam=af,domain=pnas.org|science.org|scitation.org|wiley.com|worldscientific.com
 $doc,removeparam=af_reengagement_window
 $doc,removeparam=aoOfferParams,domain=citi.com
@@ -1106,10 +1123,13 @@ $doc,removeparam=jp_cmp,domain=chase.com
 $doc,removeparam=l,domain=ask.com|askmoney.com|bloglines.com|consumersearch.com|directhit.com|faqtoids.com|findthedish.com|informationvine.com|internetcorkboard.com|life123.com|ohdeal.com|questionsanswered.net|reference.com|shop411.com|shopping.net|simpli.com|smarter.com|symptomfind.com
 $doc,removeparam=lId,domain=apple.com|reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion|youtube.com
 $doc,removeparam=method,domain=peacocktv.com
+$doc,removeparam=mkt_rec,domain=temu.com
 $doc,removeparam=o,domain=ask.com|askmoney.com|bloglines.com|consumersearch.com|directhit.com|faqtoids.com|findthedish.com|informationvine.com|internetcorkboard.com|life123.com|ohdeal.com|questionsanswered.net|reference.com|shop411.com|shopping.net|simpli.com|smarter.com|symptomfind.com
 $doc,removeparam=orig_ref,domain=peacocktv.com
 $doc,removeparam=plcmt,domain=grafana.com
 $doc,removeparam=refId,domain=aebn.com|linkedin.com
+$doc,removeparam=refer_page_el_sn,domain=temu.com
+$doc,removeparam=refer_page_sn,domain=temu.com
 $doc,removeparam=referrer,domain=~bolt.com|~f4map.com|~deviantart.com|~github.com|~discover.*|~vimeo.*|~123-reg.co.uk
 $doc,removeparam=refresh,domain=cnn.com|startribune.com
 $doc,removeparam=selectedCCIndex,domain=citi.com
@@ -1663,6 +1683,7 @@ $removeparam=coliid
 $removeparam=collection,domain=everlane.com
 $removeparam=compact_view,domain=reddit.app.link
 $removeparam=content,domain=1sol.io|bybit.com|coinpanel.com|docs.google.com|docsend.com|eonline.com|eventbrite.*|forms.gle|gleam.io|goodcrypto.app|instagram.com|kasta.io|runnode.com|t.me|twitter.com|x.com|youtube.com
+$removeparam=context,domain=avito.ru|avito.ma
 $removeparam=context,domain=imdb.com|fiverr.com|spotify.com
 $removeparam=context_referrer
 $removeparam=correlation_id,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
@@ -5190,6 +5211,7 @@ $~xmlhttprequest,removeparam=ref_,domain=amazon.*|awesomeopensource.com|boxoffic
 2ghai.com##.a_xiu_t
 2ghai.com##.yttl_x_g
 2gomovies.to#$#abort-on-property-write _0x287f; abort-on-property-write _0x2f53; abort-on-property-write _0x16f4
+2qpqwkx.cn
 2ujj.com#@#.ad350
 2yjw.com##.widget-tops
 2yjw.com,fuliba2021.net,itdog.cn,zhujiceping.com##.orbui
@@ -9466,6 +9488,7 @@ apk.tw###focus
 apk.tw#@##google_ad
 apk.tw#@#.ad300
 apk.tw#@#.google_ad
+apkcombo.com##.diseanmevrtt
 apkmirror.com##script:contains(canRunAds = false)
 apkmirror.com#@#.adsbygoogle
 apowersoft.cn##.activity-poster
@@ -10291,7 +10314,6 @@ chuangshi.qq.com##.topbanner,.mainbox>div.adv,div.jpBanner.fr,.banner_index,.mai
 chunyuyisheng.com###ad_modal
 chunyuyisheng.com##.ad-modal-left
 chunyuyisheng.com##.ui-grid + .fixed-layer
-chushoushijian.cn
 chyangwa.net,motorfans.com.cn###scrollPics
 ci123.com###fixed-recom
 cibaipuki.com##.table2
@@ -10608,11 +10630,8 @@ dajie.com##.envelop_layer
 dajie.com##.register_layer
 dalipan.com##.hongbao-wrap
 dan-teng.top##.nav
-dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,RTCPeerConnection,null)
-dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##.gm-fp-body video:style(max-height:100%!important)
-dandanzan.com,dandanzan10.top,nunuyy5.org#@#+js(nowebrtc)
 dangdang.com###fix_erweima
 dangdang.com##.bottom_fixed
 dangdang.com##.code2s
@@ -12050,6 +12069,7 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 huya.com###matchComponent4
 huya.com###player-download-guide-tip
 huya.com###sidebarBanner
+huya.com###template
 huya.com##.end-ab-banner
 huya.com##.end-ab-wrap
 huya.com##.jump-to-phone
@@ -13867,7 +13887,6 @@ oneindia.com###closePopupDiv
 oneinstack.com##.sidebar > .widget:last-child
 oneinstack.com##.w-ad
 onemanga.me#@#.adblock
-onenews.vip
 oneplusbbs.com###bbsRegisterGuide
 onifile.com#$#abort-on-property-read _pop
 online.dramacafe.in##.pm-ad-zone
@@ -14310,6 +14329,7 @@ qq.com###qqmail_AD_container
 qq.com###r_ad
 qq.com##+js(json-prune, ad)
 qq.com##+js(json-prune, ads ad material.video)
+qq.com##+js(no-fetch-if, beacon.)
 qq.com##.AdBox-Article-QQ
 qq.com##.AdTop-Article-QQ
 qq.com##.J_hot_game
@@ -14383,7 +14403,6 @@ qsptv.net###widget-weixin
 quandangdang.net
 qudao.com###wechat
 qudong.com##.advert_bottom
-quickapp.cn
 qunar.com##.flight_ad
 qunar.com##.list_promotion_bar
 quora.com##.answer_auto_expanded_comments + div > div.feed_expand
@@ -14943,7 +14962,6 @@ start.firefoxchina.cn##.mod-delay-resource
 stat-nba.com###ad_video
 static.g.iqiyi.com
 static/pull/qwe1021.js
-statsy.net
 stbemucode.com##DIV.header-ads
 stc.gov.cn###mov
 steachs.com##.sidebar:first-child
@@ -15496,7 +15514,6 @@ v2ex.com##.sidebar_units
 v2rayssr.com###b2-widget-html-12
 v2rayssr.com###gg-box
 v2rayssr.com##.slider-4-box1
-v4dwkcv.com
 vailonxx.com,phimlongtieng.com,phimlongtieng.net#$#abort-current-inline-script jQuery window.open
 vanpeople.com##.banneradv-newbox
 vansky.com##.liAds
@@ -16346,7 +16363,6 @@ zzzyk.com###Tinfo
 |https:$popup,domain=openload.co|oload.tv|javno.me
 |https:$script,third-party,xmlhttprequest,domain=m.733.so|m.umei.cc
 |https:$third-party,domain=linkshrink.net
-|https://$script,subdocument,popup,3p,domain=btsow.mom|rarbgprx.org
 |https://dd-static.jd.com/ddimg/jfs/t1/173245/15/28822/346324/62fcb4b0Eb437d047/136a1e04890320b8.jpg$image,domain=subaibaiys.com
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
 |https://tellme.pw/go/jav$popup
@@ -16399,6 +16415,7 @@ zzzyk.com###Tinfo
 ||04stream.tv/sda/
 ||0512s.com^$third-party
 ||053h94.com^
+||055g.com^
 ||056opui.com^
 ||0573fang.com/ads/
 ||0575bbs.com/js/float.js
@@ -16787,6 +16804,7 @@ zzzyk.com###Tinfo
 ||1qkmxbt.com^
 ||1qlgi.top^
 ||1r7efqo.tjfmd.com^$script,xmlhttprequest,domain=pch.com
+||1sk27.fun^
 ||1t24.com^$third-party
 ||1u0oqad.diqx.namemc.com^$domain=namemc.com
 ||1u5gy.xyz^
@@ -19701,6 +19719,7 @@ zzzyk.com###Tinfo
 ||bigfishgames.com^$removeparam=npi
 ||bigfishgames.com^$removeparam=pc
 ||bihaipack.com^
+||biiepofl.xyz^
 ||biketo.com/d/file/p/
 ||bild.de^$doc,removeparam=t_ref
 ||bilezdq.cn^
@@ -20036,7 +20055,7 @@ zzzyk.com###Tinfo
 ||btrace.qq.com^
 ||btrace.video.qq.com^
 ||btschool.net/images/*/HDYGR
-||btsow.mom/app/jav$image
+||btsow.motorcycles/app/javu$image
 ||btsvad8.com^
 ||bttazsyk.icu^
 ||btwuji.com/jsj1/
@@ -21209,6 +21228,7 @@ zzzyk.com###Tinfo
 ||dbmp4.com/js/foot.
 ||dbnsd2viud.xyz^
 ||dbnwlp.xyz^
+||dbpxivi.xyz^
 ||dbtojr.xyz^
 ||dbw.cn/eap/js/db/dbwad_
 ||dbw.cn/eap/js/hl/hlj_ad
@@ -21324,6 +21344,7 @@ zzzyk.com###Tinfo
 ||dfepm.xyz^
 ||dffrahax.com^
 ||dffy.com/static/popUp.
+||dfg6.top^
 ||dfghaqea.xyz^
 ||dfgpifa.com^
 ||dfgwer.com^
@@ -21777,8 +21798,6 @@ zzzyk.com###Tinfo
 ||dykeep.com^
 ||dykshao.cn/image/$third-party
 ||dymmt.com/skin/mzitu/js/foot.
-||dyncdn.me/static/20/js/expla$script
-||dyncdn.me/static/20/js/showads.js$script
 ||dyo.gs/Webservices/jsParseLinks.aspx$script,third-party
 ||dyo.gs/visitScript/$script,third-party
 ||dysitecdn.com/gg
@@ -23713,6 +23732,7 @@ zzzyk.com###Tinfo
 ||hsadeg.site^
 ||hsbianma.com/Ad/
 ||hsbianma.com/content/images/*-ad-
+||hscnpk86.shop^
 ||hsdawz.com^
 ||hsex.men/nb/
 ||hsex.men/view/img/*.gif
@@ -24265,6 +24285,7 @@ zzzyk.com###Tinfo
 ||ios.426g.com^
 ||ios.bugly.qq.com^
 ||iosppk.com^
+||iossdok.com^
 ||ioswhi.com^
 ||iot-eu-logser.realme.com^
 ||iot-logser.realme.com^
@@ -24707,6 +24728,7 @@ zzzyk.com###Tinfo
 ||jjwxc.net/jjad*.html$popup
 ||jjztrz.xyz^
 ||jkasn.com^
+||jkbdpp.xyz^
 ||jke1.jianke.com^
 ||jklhs7u.com^
 ||jknnjk.com^
@@ -25251,6 +25273,7 @@ zzzyk.com###Tinfo
 ||koolearn.com/www/subject/script/subject_form.js
 ||koolearn.com/zt/poster_js/$domain=~www.koolearn.com
 ||kopde.xyz^
+||koqsxdpx.xyz^
 ||kostool.cn/screenshot/
 ||koudaikeji.info^
 ||kovla.com/?$popup,domain=rapidgator.net
@@ -25696,6 +25719,7 @@ zzzyk.com###Tinfo
 ||lkancklanklcav.com^
 ||lkdhlp.xyz^
 ||lkdybkwi.xyz^
+||lkenflknkd.com^
 ||lkidke.com^
 ||lkmhn.com^
 ||lkmxqq.com^
@@ -25706,6 +25730,7 @@ zzzyk.com###Tinfo
 ||lkot.top^
 ||lkpmprksau.com^
 ||lkqyqwk.xyz^
+||lkuygf.top^
 ||ll.gxsky.com^
 ||ll.hudong.com^
 ||llaxl.com^
@@ -26126,9 +26151,11 @@ zzzyk.com###Tinfo
 ||max211.top^
 ||maximpetus.com^
 ||maxthonimg.com/v6/festival/
+||maxucc77.top^
 ||maxun066.top^
 ||maxun103.top^
 ||maxun118.top^
+||maxunn55.top^
 ||mazu.3g.qq.com^
 ||mb.gulongbbs.com^
 ||mbalib.com/common/a_mbalib/
@@ -26314,6 +26341,7 @@ zzzyk.com###Tinfo
 ||mifyeldx.top^
 ||mig.str.mdt.qq.com^
 ||miguyu.com/AD/
+||miiepofl.xyz^
 ||mikanani.me/images/Masha/
 ||mikongdd.top^
 ||mikuclub.*/pub/
@@ -29851,6 +29879,7 @@ zzzyk.com###Tinfo
 ||tigtag.com/images/*1000x
 ||tigtag.com/images/pic1/
 ||tigtag.com/styles/phpcms/js/tigtag/ads.js
+||tiiepofl.xyz^
 ||tiimg.com^$domain=678cn.com
 ||tikimg.cc^
 ||tiktok.com^$doc,removeparam=sec_user_id
@@ -30381,6 +30410,7 @@ zzzyk.com###Tinfo
 ||uibjhqwkl.com^
 ||uidwyx.icu^
 ||uifyeldt.top^
+||uiiepofl.xyz^
 ||uiiwzyv.cn^
 ||uioozpxq.com^
 ||uiqatnpooq.com/0f8b73d477b554394e23077935e1fff4.js$script,domain=extratorrent.cc
@@ -30525,6 +30555,7 @@ zzzyk.com###Tinfo
 ||uuu9.com/photolog.html
 ||uuu9.tieba.com^$subdocument
 ||uuuxyjh.cn^
+||uuuzuu.xyz^
 ||uuxfznnf.xyz^
 ||uuxs.net^$subdocument
 ||uuzsfpju.xyz^
@@ -31167,6 +31198,7 @@ zzzyk.com###Tinfo
 ||wqdwork.com^
 ||wqmgqm.xyz^
 ||wqnggnse.fun^
+||wqnwdjjc.xyz^
 ||wqshui.com^
 ||wqvbuj.icu^
 ||wqweiog.xyz^
@@ -31620,6 +31652,7 @@ zzzyk.com###Tinfo
 ||xiexingcun.com/tongji.js
 ||xiexingcun.com/tyong.js
 ||xiezhuo038.cn^
+||xiiepofl.xyz^
 ||xilele.com^
 ||xilofr.xyz^
 ||ximit8023.maijijo.com^
@@ -32695,6 +32728,7 @@ zzzyk.com###Tinfo
 ||ztshg.cn^
 ||ztyumn.ifeng.com/$script
 ||ztyumn.ifeng.com^
+||zu2.top^
 ||zuiacg.com/images/client/
 ||zuixinyiqi.com^
 ||zukddms.cn^
